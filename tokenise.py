@@ -1,5 +1,3 @@
-import sys
-
 def tokenise(text):
     isString = False
     isComment = False
@@ -22,7 +20,7 @@ def tokenise(text):
                 token = ""
                 continue
 
-        if char in [" ", "\n"] and isString == False:
+        if char in [" ", "\n"] and not isString:
             if not (token == " " or len(token) == 0):
                 if not token.count('"'):
                     token = token.replace(' ', '')
@@ -30,7 +28,7 @@ def tokenise(text):
             token = ""
             continue
 
-        if char in ["(", ")", "{", "}", ":", ","] and isString == False:
+        if char in ["(", ")", "{", "}", ":", ","] and not isString:
             if len(token.replace(' ', '')) > 0:
                 tokens.append(token)
                 token = ""
@@ -41,8 +39,9 @@ def tokenise(text):
 
     return tokens
 
-with open("example.txt", "r") as f:
-    l = f.readline()
-    while l:
-        print(tokenise(l))
-        l = f.readline()
+
+# with open("example.pnut", "r") as f:
+#     line = f.readline()
+#     while line:
+#         print(tokenise(line))
+#         line = f.readline()
