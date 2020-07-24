@@ -1,0 +1,14 @@
+use module console:display
+
+object Object {
+  null procedure HelloWorld {
+    # This is a comment
+    String string = "Hello World"
+    display string
+  }
+
+  Integer|Float procedure Add (Integer|Float number1, Integer|Float number2){
+    return number1 + number2
+  }
+
+}

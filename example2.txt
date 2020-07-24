@@ -1,0 +1,7 @@
+use module console
+use local example
+
+example:Object:HelloWorld
+
+sum = example:Object:Add 5.76, 4
+console:display sum
