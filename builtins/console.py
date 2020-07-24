@@ -1,7 +1,3 @@
-# --- DUMMY BEGIN
-def dummy(n):
-    pass
-# --- DUMMY END
 # --- DISPLAY BEGIN
 
 
@@ -9,9 +5,10 @@ def display(value):
     print(value)
 # --- DISPLAY END
 
-# --- DUMMY2 BEGIN
+
+# --- DISPLAY_INLINE BEGIN
 
 
-def dummy2(n):
-    pass
-# --- DUMMY2 END
+def display_inline(value):
+    print(value, end="\r")
+# --- DISPLAY_INLINE END
