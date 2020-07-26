@@ -1,5 +1,4 @@
 use module console:display
-use module console:dummy
 
 # --- OBJECT BEGIN
 object Object {
@@ -9,7 +8,7 @@ object Object {
     display string
   }
 
-  Integer|Float procedure Add (Integer|Float number1, Integer|Float number2){
+  Integer|Float procedure Add (Integer|Float number1, Integer|Float number2) {
     return number1 + number2
   }
 

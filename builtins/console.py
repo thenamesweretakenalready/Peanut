@@ -12,3 +12,10 @@ def display(value):
 def display_inline(value):
     print(value, end="\r")
 # --- DISPLAY_INLINE END
+
+
+# --- INPUT BEGIN
+
+
+def user_input(value=""):
+    return input(value)

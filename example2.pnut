@@ -3,5 +3,11 @@ use local example
 
 example:Object:HelloWorld
 
-sum = example:Object:Add 5.76, 4
-console:display sum
+Integer number1 = console:user_input "Number 1:"
+sum = example:Object:Add number1, 4
+if (sum === 10) {
+  console:display sum
+}
+else {
+  console:display "Sum is not an integer"
+}
