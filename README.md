@@ -4,3 +4,5 @@ Peanut will be an object-oriented, statically typed language. The aim is for it 
 I will not be accepting pull requests just yet, I'd like to work on this just myself currently, but issues are most welcome.
 
 You can track progress here: https://trello.com/b/TYI1rIOc/peanut
+
+PS: The code in this repo is offensively bad.
